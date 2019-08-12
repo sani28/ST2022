@@ -1,0 +1,645 @@
+
+/* ------------------------- HTML, BODY ---------------------  */
+
+html {
+     width: 100%;
+     max-height: 100vh;
+     margin: 0;
+     padding: 0;
+
+     }
+
+body {
+
+  background: #fff;
+  font-family: 'Cousine', monospace;
+  font-size: 1em;
+  max-height: 100%;
+  overflow-y: hidden;
+ }
+
+img {
+  max-width: 100%;
+}
+
+p {
+  max-width: 60%;
+}
+
+
+.inline {
+  display: inline;
+}
+
+nav, a {
+  font-size: 0.65em;
+  text-decoration: none;
+  color: black;
+  padding: 0.2em;
+  letter-spacing: 0.2px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000f;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-family: 'Cousine', monospace;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.extra-padding {
+  width: 100%;
+  height: 30%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+
+/*---------------------------------- Modal --------------------------------*/
+.pdfobject-container { width: 50%; height: 400px;}
+.pdfobject { border: 0px solid #666; }
+
+
+#myBtn {
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: white;
+  font-family: 'Cousine', monospace;
+  font-weight: lighter;
+  width: 60%;
+  margin-bottom:5%;
+}
+
+a.button {
+  border: 2px solid black;
+  padding: 10px;
+
+}
+
+#thumbnail {
+width: 30%;
+}
+
+#myBtn:hover {
+  background-color: grey; /* Green */
+  color: white;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------------------------- Page Containers ---------------------  */
+
+
+.button-container {
+  width: 100%;
+  padding: 5%;
+  margin-left: -5%;
+  margin-bottom: 10%;
+}
+
+.button:hover {
+  background-color: #FF005C;
+}
+
+#profile {
+  margin-top: 2%;
+  width: 100%;
+}
+
+#logo-container {
+  height: 10vh;
+  margin-left: 1em;
+  margin-top: 1em;
+  /* border: 1px solid black; */
+}
+
+#lineDrawing {
+  /* width: 60vw;
+  height: 20vh; */
+  /* border: 1px solid red; */
+}
+
+#nav-container{
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#background-container{
+    width: 90vw;
+    height: 80vh;
+    padding: 10px;
+    margin-left: 1em;
+}
+
+#bg {
+  display:inline;
+  height: 100vh;
+  width: 40vw;
+}
+
+.nav-items{
+  width: 100%;
+  display:flex;
+  margin-right: 2%;
+  justify-content: space-around;
+}
+
+#bio-container {
+  margin-bottom: 30%;
+}
+
+.bio-content {
+  font-size: 0.5em;
+  padding: 5%;
+  padding-bottom: 30%;
+}
+
+#white-bg {
+  background-color: white;
+  width: auto;
+  height:auto;
+}
+
+#rectangle {
+  background-image: url(rectangle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10vw;
+  height: 100vh;
+  transform: scale(1.8,1.8);
+  /* -ms-transform: scale(2);
+  -webkit-transform: scale(2); */
+  margin-top: 35vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#wavyLines {
+  background-image: url(wavyLines.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10vw;
+  height: 100vh;
+  transform: scale(2);
+  margin-top: 51vh;
+  margin-left: 20vw;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#blueRect {
+    background-image: url(blueRect.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    transform: scale(2);
+    margin-top: 6vh;
+    margin-left: -5vw;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#ellipse {
+
+  background-image: url(ellipse.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  transform: scale(1.3,1.3);
+  margin-top: 80vh;
+  margin-left: -5vw;
+  z-index: -2;
+  overflow: hidden;
+}
+
+#crosses {
+
+    background-image: url(crosses.svg);
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    width: 20vw;
+    height: 15vh;
+    transform: scale(2,2);
+    position: sticky;
+    top: calc(100vh - 0px);
+    margin-bottom: -1px;
+    z-index: -2;
+}
+
+
+.iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+
+/* ------------------------- Media Queriey > 670 px ---------------------  */
+
+
+@media screen and (min-width: 670px) {
+
+  #bio-container{
+    width: 30%;
+    height: 100%;
+    margin-top: -18em;
+    margin-left: 50%;
+    overflow-y: scroll;
+    margin-bottom: 10em;
+  }
+
+  #blueRect {
+
+      background-image: url(blueRect.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 30vw;
+      height: 100vh;
+      transform: scale(2);
+      /* -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4); */
+      margin-top: 55vh;
+      margin-left: -5vw;
+      z-index: -2;
+
+  }
+
+  #diagLines {
+    opacity: 0.3;
+    overflow: hidden;
+
+
+  }
+
+  #sidelink {
+    color:black;
+    width: 20px;
+    height: 10rem;
+    top:15em;
+    float:right;
+    position: absolute;
+    right:0;
+    z-index: 3;
+    margin-right: -3%;
+    margin-bottom: 100px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(-90deg);
+  }
+
+
+  #sidelink-two {
+    color: black;
+    width: 20px;
+    height: 10rem;
+    float:right;
+    position:absolute;
+    right:0;
+    top: 30em;
+    margin-right: -3%;;
+    z-index: 1;
+    margin-bottom: 100px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(-90deg);
+  }
+
+
+  #ellipse {
+
+    background-image: url(ellipse.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 4vw;
+    height: 100vh;
+    transform: scale(2,2);
+    /* -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4); */
+    margin-top: 85vh;
+    margin-left: 12vw;
+    z-index: -2;
+
+  }
+
+  #crosses {
+
+      background-image: url(crosses.svg);
+      background-repeat: no-repeat;
+      /* position: absolute; */
+      width: 15vw;
+      height: 50vh;
+      transform: scale(2,2);
+      /* -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4); */
+      position: sticky;
+      top: calc(100vh - 100px);
+      margin-left: -2%;
+      z-index: -2;
+      overflow: hidden;
+
+  }
+
+  .bio-content {
+    width: 80%;
+  }
+
+  .codedrillz-description{
+    width: 50%;
+    font-size: 0.7em;
+  }
+
+  .project-container {
+    display:inline-block;
+    font-size: 0.6em;
+    width: 55vw;
+    height: 100%;
+    max-height: 100%;
+    overflow-y:scroll;
+    margin-top: -10em;
+    margin-left: 44%;
+    box-sizing: border-box;
+  }
+
+
+  #thumbnail {
+    width: 100%;
+  }
+
+
+  #title {
+    width: 100%;
+    height: 3vh;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-weight: black;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+  }
+
+  #category {
+    width: 100%;
+    height: 2vh;
+    font-family: 'Inconsolata', monospace;
+    font-weight: black;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    margin-bottom: 3vh;
+  }
+
+}
+
+/* ------------------------- Media Queries < 670px ---------------------  */
+
+@media screen and (max-width: 670px) {
+
+  #bio-container{
+    width:80%;
+    height: 100%;
+    padding-top:8%;
+    padding-bottom:8%;
+    overflow-y:scroll;
+  }
+
+  .profile-pic {
+    width: 85%;
+    margin-left: 10%;
+  }
+
+  #sidelink {
+    display: none;
+  }
+
+
+  #sidelink-two {
+    display:none;
+  }
+
+  #rectangle {
+        opacity: 0.3;
+        overflow: hidden;
+  }
+
+  #wavyLines {
+        opacity: 0.3;
+        overflow: hidden;
+  }
+
+  #blueRect {
+
+      background-image: url(blueRect.svg);
+      opacity: 0.08;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 30vw;
+      height: 100vh;
+      transform: scale(2);
+      /* -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4); */
+      margin-top: 55vh;
+      margin-left: -5vw;
+      z-index: -2;
+      overflow: hidden;
+
+  }
+
+  #ellipse {
+
+    background-image: url(ellipse.svg);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 15vw;
+    height: 100vh;
+    transform: scale(2,2);
+    /* -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4); */
+    margin-top: 75vh;
+    margin-left: -10vw;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  #diagLines {
+
+    background-image: url(diagonal.svg);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 8vw;
+    /* height: 100vh; */
+    transform: scale(2,2);
+    /* -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4); */
+    margin-top: 106vh;
+    margin-left: 18vw;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  #triangle {
+    background-image: url(triangle.svg);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 22vw;
+    height: 100vh;
+    transform: scale(2,2);
+    /* -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4); */
+    margin-top: 83vh;
+    margin-left: 20vw;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  #crosses {
+      background-image: url(blue-ellipse.svg);
+      opacity: 0.08;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 24vw;
+      height: 50vh;
+      transform: scale(2,2);
+      margin-left: -2vw;
+      /* -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4); */
+      z-index: -2;
+  }
+
+  .bio-content {
+    overflow-y: scroll;
+    padding-bottom: 30%;
+  }
+
+  /* ---------------------------PROJECT ARTICLES -----------------------------------*/
+
+  .project-container {
+    font-size: 0.7em;
+    display:inline-block;
+    width: 85vw;
+    height: 100%;
+    margin-top: 2em;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+  }
+
+
+  #thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  #title {
+    width: 100%;
+    height: 3vh;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-weight: black;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+  }
+
+  #category {
+    width: 100%;
+    height: 2vh;
+    font-family: 'Inconsolata', monospace;
+    font-weight: black;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    margin-bottom: 3vh;
+  }
+
+
+
+}
+
+
+
+@media screen and (min-width: 760px) {
+
+  .profile-pic{
+    width: 70%;
+    height: 70%;
+  }
+}

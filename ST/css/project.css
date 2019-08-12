@@ -1,0 +1,639 @@
+
+/* ------------------------- HTML, BODY ---------------------  */
+
+
+html {
+     width: 100%;
+     max-height: 100vh;
+     margin: 0;
+     padding: 0;
+     }
+
+body {
+
+  background: #fffaf1;
+  font-family: spaceMono, monospace;
+  font-size: 1em;
+  max-height: 100%;
+  overflow: scroll;
+  cursor: url(../images/cursor.svg);
+  overflow-x: hidden;
+}
+
+#kodak-process {
+  width: 50%;
+}
+
+#lineDrawing {
+  display: block;
+  width: 50vw;
+  padding: 1.5em;
+}
+
+.proj-sec-container {
+  padding: 1em;
+  display: inline;
+  width: 100%;
+}
+
+
+.iframe-global {
+  border: 6px solid white;
+  width: 40%;
+  height: 300px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fe5f56;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+p {
+  max-width: 400px;
+  font-size: 0.6em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#example1 {
+  width: 100%;
+  display: block;
+  padding-top: 25%;
+}
+
+/* social media */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* cursor */
+
+.cursor {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.cursor:nth-child(1) {
+  background-color: #3a26fd;
+  z-index: 1;
+}
+.cursor:nth-child(2) {
+  background-color: #fff;
+}
+
+.cursor{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cursor:nth-child(1){ background-color: #3a26fd; z-index: 1;}
+.cursor:nth-child(2){ background-color: #fff; }
+
+/* firefox */
+
+.link--urpi::before {
+  -webkit-clip-path: url(#cp_up);
+  clip-path: url(#cp_up);
+}
+
+.link--urpi::after {
+  -webkit-clip-path: url(#cp_down);
+  clip-path: url(#cp_down);
+}
+
+/* --- custom font --- */
+
+@font-face {
+  font-family: lackLine;
+  src: url(../LackLine.otf);
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: laoMn;
+  src: url(../LaoMN.ttc);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: PTMono;
+  src: url(../PTMono.ttc);
+}
+
+@font-face {
+  font-family: Konstant;
+  src: url(../KonstantGrotesk.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: spaceMono;
+  src: url(../SpaceMono-Regular.ttf);
+  font-weight: bold;
+}
+
+
+.top-nav{
+  top:2vh;
+  right:10vw;
+  font-size: 15pt;
+  position: absolute;
+  font-family: spaceMono;
+  font-weight:400;
+}
+
+a#resume {
+  padding-right: 20px;
+}
+
+#job-title {
+  font-size: 1em;;
+}
+
+h1 {
+  font-size:4em;
+  font-weight: bolder;
+}
+
+#back {
+  width: 50px;
+}
+
+.back-btn {
+  margin-top: -10vh;
+  position: fixed;
+  z-index: 10;
+}
+
+/* --- project navigation -- */
+
+#animated-name {
+  display: block;
+  height: 20vh;
+}
+
+#padding {
+  height: 25vh;
+}
+
+#proj-header {
+  padding: 2em;
+  display: block;
+  width: 100%;
+}
+
+#title {
+  width: 50%;
+  padding: 2em;
+}
+
+#project-sec1 {
+  padding: 2em;
+  width: 100vw;
+  height: 65vh;
+  display: block;
+}
+
+a#pg {
+  background-color: orange;
+}
+
+h1#proj-title-individual{
+  font-size: 4em;
+  padding: 2em;
+  font-family: lackLine;
+  width: 50px;
+}
+
+
+h2#live-website {
+  font-family: lackLine;
+  font-size: 4em;
+  display: block;
+}
+
+h3 {
+  font-size: 0.8em;
+  background-color:#fff;
+  width: 20vw;
+}
+
+h4 {
+  color:black;
+  font-size: 1.2em;
+  background-color: white;
+}
+
+#gif {
+  transform: scale(0.6);
+  background-color: white;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%s;
+  font-family: spaceMono;
+  font-size: 0.8em;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column#image {
+  width: 35%;
+}
+
+.column#text {
+  width: 50%;
+  font-size: 0.6em;
+}
+
+#resume {
+  height: 100vh;
+}
+
+h2#head {
+  font-size: 0.8em;
+  letter-spacing: 0.2px;
+  background-color: white;
+  width: 50%;
+}
+
+h2#loop-gif-text {
+  font-size: 1.8em;
+  letter-spacing: 0.2px;
+  width: 90%;
+  font-family: lackLine;
+}
+
+li {
+  font-family: spacemono;
+  font-size: 0.6em;
+}
+
+
+/* ------------------ project info styling ---------------- */
+
+
+#proj-head{
+  font-size: 0.7em;
+  font-family: spaceMono;
+  max-height: 200px;
+}
+
+#project-sec2 {
+  padding: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 20%; */
+  display: block;
+  width: 90vw;
+  height: 50vh;
+  margin-top: 10%;
+}
+
+#project-sec3 {
+  padding: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10vh;
+  width: 90vw;
+  height: 50vh;
+  padding-top: 10vh;
+  display: block;
+}
+
+#project-sec4 {
+  padding: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20vh;
+  width: 90vw;
+  height: 50vh;
+  display: block;
+}
+
+
+
+/* ------------------ iframe for website----------------- */
+
+.iframe {
+  width: 100vw;
+  height: 80vh;
+  transform: scale(0.8)
+}
+
+
+
+/* -- nested boxes for project menu --*/
+
+.box1 {
+  grid-column-start: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+* {box-sizing: border-box;}
+
+.wrapper {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  padding:3em;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+.box1 {
+  grid-column: 1 / 4;
+}
+
+.proj-num {
+  font-family: lackLine;
+  font-size: 30pt;
+  margin-left: 20%;
+}
+
+.proj-name {
+  font-family: PTMono;
+  font-size: 36pt;
+  letter-spacing: 1px;
+}
+
+.proj-category {
+  font-size: 10pt;
+  font-family: spaceMono;
+  letter-spacing: 1px;
+}
+
+.nested {
+  padding: 1em;
+}
+
+
+#graphic-gallery {
+  width: 100%;
+  height: 60vh;
+  padding: 5em;
+  margin-top: 10%;
+  background-color: white;
+
+}
+
+/* ------------------ media query for 780px ----------------- */
+
+@media screen and (max-width: 780px) {
+
+  #project-sec2 {
+    padding: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    width: 90vw;
+    height: 20vh;
+    margin-top: 30%;
+  }
+
+  #title {
+    width: 80%;
+    padding: 2em;
+  }
+
+  #project-sec-1 {
+    margin-bottom:5%;
+  }
+
+  #project-sec3 {
+    margin-top: 25%;
+  }
+
+  #kodak-process {
+    width: 100%;
+  }
+
+  h1{
+    font-size: 1.1em;
+  }
+
+  #proj-head{
+    font-size: 0.8em;
+    font-family: spaceMono;
+    max-height: 200px;
+  }
+
+  .column#image {
+    display: none;
+  }
+
+  .column#image {
+    width: 100%;
+  }
+
+  .column#text {
+    width: 100%;
+  }
+
+  .iframe-global {
+    width: 90vw;
+    height: 200px;
+  }
+
+  #first-nav {
+    width: 30%;
+    margin-left: 4.5vw;
+    height: 5%;
+    position:absolute;
+  }
+
+  .iframe{
+    margin-left: -10%;
+    width: 98vw;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .proj-name {
+    font-size: 30pt;
+  }
+
+  .proj-num {
+    font-size: 40pt;
+  }
+
+  .proj-category {
+    font-size: 10pt;
+    margin-left: 10%;
+  }
+}
+
+/* ------------------ media query for 600px ----------------- */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .proj-num {
+    font-family: lackLine;
+    font-size: 30pt;
+    padding-left: 2%;
+  }
+
+  body {
+      background-image: url();
+  }
+
+  #lineDrawing {
+    width: 80vw;
+    top: 0;
+    left:0;
+  }
+
+  .proj-name {
+    font-family: PTMono;
+    font-size: 20pt;
+    padding-top: 10%;
+  }
+
+  .proj-category {
+    font-size: 6pt;
+    font-family: PTMono;
+    padding-top: 10%;
+    letter-spacing: 0.5px;
+  }
+
+  #logo-container {
+    height: 10vh;
+    margin-left: 1em;
+    margin-top: 2em;
+    z-index: 20;
+    width: 100%;
+  }
+
+}
+
+.vertical-menu {
+  width: 100vw;
+  z-index: 10;
+  margin-top: 8%;
+}
+
+.vertical-menu a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: none;
+  color: #fe5f56;
+  cursor: cell;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.inline {
+  display: inline;
+}
+
+nav, a {
+  font-size: 0.65em;
+  text-decoration: none;
+  color: black;
+  padding: 0.2em;
+  letter-spacing: 0.2px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000f;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-family: 'Cousine', monospace;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.extra-padding {
+  width: 100%;
+  height: 30%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
