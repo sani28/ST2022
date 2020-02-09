@@ -1,0 +1,363 @@
+/* -------------- FONTS  ------------------------------- */
+@font-face {
+  font-family: gangsterGrotesk;
+  src: url(./fonts/GangsterGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: helveticaNeue;
+  src: url(./fonts/Helvetica-Neue-LT-Std-53-Extended.ttf);
+}
+
+@font-face {
+  font-family: universExtended;
+  src: url(./fonts/Univers-93-Extra-Black-Extended.ttf);
+}
+
+@font-face {
+  font-family: CosiTimes;
+  src: url(./fonts/CosiTimes-Roman.otf);
+}
+
+@font-face {
+  font-family: spaceMono;
+  src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+a#viff {
+  background-color: orange;
+  border-radius: 20px;
+  padding: 6%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+a#viff:hover {
+  background-color: black;
+  color: white;
+}
+
+/* -------------- DOT GRID BG  ------------------------------- */
+
+
+.dot-grid {
+  background-image: linear-gradient(transparent 0px, transparent 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255) 20px), linear-gradient(to right, rgb(200, 195, 199) 0px, rgb(200, 195, 199) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255) 20px);
+  background-position: -233px 0px;
+  background-size: 5px 5px;
+  min-width: 100%;
+  max-height: 100vh;
+  user-select: none;
+}
+
+/* -------------- FIRST GRID CONTAINER -------------------------------------------- */
+
+html, body { background-color: white;max-width: 100%; height:100vh; margin: 0; font-family: helveticaNeue; overflow-x: hidden;}
+
+.grid-container { background-color: white;max-width: 100%; height:150%; margin: 0; font-family: helveticaNeue; overflow-y: hidden; overflow-x: hidden;}
+
+ .title {
+   width: 100%;
+   font-family: helveticaNeue;
+   padding: 5%;
+ }
+
+  .time, .time-2, .bio, .members {
+    font-size: 0.65em;
+    line-height: 14px;
+    font-family: helveticaNeue;
+    padding: 10%;
+  }
+
+  .time p{
+      font-weight: 1000;
+      border:none;
+      font-size: 1.3em;
+  }
+
+  .time-2 p {
+    font-weight: 1000;
+    border: none;
+    font-size: 1.3em;
+
+  }
+
+  .members p {
+    font-weight: 1000;
+    font-size: 1.3em;
+    border: none;
+  }
+
+/* -----------------    GRID CONTAINER 1      ----------------------------------- */
+
+
+.grid-container * {
+  /* border: 0.3px solid black; */
+ position: relative;
+}
+
+.grid-container *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.8fr 500px;
+  grid-template-areas: "title title title title" "bio bio timeline members" "project-desc project-desc image image";
+}
+
+.title { grid-area: title;}
+
+.bio { grid-area: bio; }
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "time time time" "time-2 time-2 time-2";
+  grid-area: timeline;
+}
+
+.time { grid-area: time; border: none;}
+
+.time-2 { grid-area: time-2; border: none;}
+
+.members { grid-area: members; }
+
+.image {
+  grid-template-columns: 0.9fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . ." ". . .";
+  grid-area: image;
+  font-size: 0.65em;
+  padding: 10%;
+  line-height: 14px;
+  display: block;
+}
+
+.project-desc { grid-area: project-desc; background-image: url("./viff/viff-loop.png"); background-size: contain; background-repeat: no-repeat;}
+
+p#title {
+  border: none;
+  font-size: 1.4em;
+  display: bock;
+  width: 100%;
+}
+
+img#viff-logo {
+  width: 50%;
+  border: none;
+}
+
+/* ------------------------------------------ GRID CONTAINER 2 --------------------------------------------- */
+
+.grid-container-2 { height: 80%; margin: 0; }
+
+.grid-container-2 * {
+ position: relative;
+}
+
+.grid-container-2 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "f1-txt f1-txt feature-1 feature-1" "f1-txt f1-txt feature-1 feature-1";
+}
+
+.f1-txt { grid-area: f1-txt; font-size: 0.65em; line-height: 14px; padding: 10%;}
+
+.feature-1 { grid-area: feature-1; background-image: url("./viff/browse-ui.gif"); background-size: contain; background-repeat: no-repeat; width: 80%;}
+
+
+/* ------------------------------------ GRID CONTAINER 3 -------------------------------------------- */
+
+.grid-container-3 { height: 80%; margin: 0; }
+
+.grid-container-3 * {
+ position: relative;
+}
+
+.grid-container-3 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "feature-2 feature-2 f2-txt f2-txt" "feature-2 feature-2 f2-txt f2-txt";
+}
+
+.feature-2 { grid-area: feature-2; background-image: url("./viff/schedule-ui.gif"); background-size: contain; background-repeat: no-repeat; width: 80%;}
+
+.f2-txt { grid-area: f2-txt; font-size: 0.65em; line-height: 14px; padding: 10%;}
+
+
+/* ---------------- grid container 4 ---------------------------------------- */
+
+.grid-container-4 { height: 80%; margin: 0; }
+
+.grid-container-4 * {
+ position: relative;
+}
+
+.grid-container-4 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "f3-txt f3-txt feature-3 feature-3" "f3-txt f3-txt feature-3 feature-3" "f3-txt f3-txt feature-3 feature-3";
+}
+
+.feature-3 { grid-area: feature-3; background-image: url("./viff/vote-ui.gif"); background-size: contain; background-repeat: no-repeat; width: 80%; }
+
+.f3-txt { grid-area: f3-txt; font-size: 0.65em; line-height: 14px; padding: 10%;}
+
+
+/* ------------------ grid container 5 ------------------------------ */
+
+.grid-container-5 { height: 80%; margin: 0; }
+
+.grid-container-5 * {
+ position: relative;
+}
+
+.grid-container-5 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "process-1 process-1 process-1 process-1" "process-1 process-1 process-1 process-1";
+}
+
+.process-1 { grid-area: process-1; background-image: url("./viff/process-1.png"); background-size: contain; background-repeat: no-repeat;}
+
+
+/* ------------------ grid container 6 ------------------------------ */
+
+.grid-container-6 { height: 60%; margin: 0; }
+
+.grid-container-6 * {
+ position: relative;
+}
+
+.grid-container-6 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-6{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "process-2 process-2 process-2 process-2" "process-2 process-2 process-2 process-2";
+}
+
+.process-2 { grid-area: process-2; background-image: url("./viff/process-2.png"); background-size: contain; background-repeat: no-repeat;}
+
+
+
+/* ------------------- grid container 5a ----------------------------------- */
+/*
+.grid-container-5a { height: 100%; margin: 0; }
+
+.grid-container-5a * {
+ position: relative;
+}
+
+.grid-container-5a *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-5a {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "feature-5 feature-5 feature-txt-5 feature-txt-5" "feature-5 feature-5 feature-txt-5 feature-txt-5";
+}
+
+.feature-5 { grid-area: feature-5; background-image: url("./viff/match.gif");background-size: contain; background-repeat: no-repeat; width: 80%;}
+
+.feature-txt-5 { grid-area: feature-txt-5; font-size: 0.6em; line-height: 14px;} */
+
+
+/* ------------------ grid container 7 ------------------------------ */
+
+.grid-container-7 { height: 60%; margin: 0; }
+
+.grid-container-7 * {
+ position: relative;
+}
+
+.grid-container-7 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-7{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "process-3 process-3 process-3 process-3" "process-3 process-3 process-3 process-3";
+}
+
+.process-3 { grid-area: process-3; background-image: url("./viff/ujs.png");  background-size: contain; background-repeat: no-repeat; width: 100%;}
+
+
+/* ------------------ grid container 8 ------------------------------ */
+
+.grid-container-8 { height: 60%; margin: 0; margin-top: -20%;}
+
+.grid-container-8 * {
+ position: relative;
+}
+
+.grid-container-8 *:after {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container-8{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "process-4 process-4 process-4 process-4" "process-4 process-4 process-4 process-4";
+}
+
+.process-4 { grid-area: process-4; background-image: url("./viff/personas.png"); background-size: contain; background-repeat: no-repeat; width: 100%;}
+
+
+/* -------------------- DESKTOP QUERY (if > 650px)  ----------------------- */
+@media screen and (min-width: 650px)  {
+}
+
+
+/* -----------------------  MOBILE QUERY (if < 650px) ----------------------- */
+@media screen and (max-width: 650px)  {
+}
