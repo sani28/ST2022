@@ -103,7 +103,7 @@ h2:hover {
 
 .sub {
   font-family: gangsterGrotesk;
-  font-size: 0.2em;
+  font-size: 0.3em;
   line-height: 8px;
   padding-left: 1vw;
   padding-top: 2vh;
@@ -183,7 +183,7 @@ h2:hover {
 }
 
 #dialog p {
-  font-family: spaceMono;
+  font-family: gangsterGrotesk;
   font-size: 0.7em;
 }
 
