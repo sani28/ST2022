@@ -205,6 +205,17 @@ h2:hover {
   width: 25px;
 }
 
+.mobile-request {
+  font-size: 1.2em;
+  width: 100%;
+  font-family: helveticaNeue;
+  padding: 1%;
+  /* border: 2px solid black; */
+  border-radius: 2px;
+  background-color: yellow;
+  color: black;
+}
+
 
 /* -------------------- DESKTOP QUERY (if > 650px)  ----------------------- */
 @media screen and (min-width: 650px)  {
@@ -238,6 +249,10 @@ h2:hover {
 
    #img-preview {
      width: 65%;
+   }
+
+   .mobile-request {
+     display: none;
    }
 }
 
@@ -299,6 +314,8 @@ h2:hover {
    #dialog {
      display: none;
    }
+
+   .pop-up { display: none;}
 
 }
 /* #divider {
@@ -499,4 +516,5 @@ button {
   font-size: 3.5em;
   letter-spacing: 0.09em;
   }
+
 }
