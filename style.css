@@ -262,6 +262,18 @@ h2:hover {
      width:90vw;
    }
 
+   #viff-preview {
+     width: 80%;
+   }
+
+   .archive {
+     display: none;
+   }
+
+   h2#misc {
+     display: none;
+   }
+
    /* h2,p {
      width: 45vw;
    } */
@@ -280,12 +292,13 @@ h2:hover {
        font-size: 1.2em;
    }
 
-   .pop-up {
+   button {
      display: none;
    }
 
-
-
+   #dialog {
+     display: none;
+   }
 
 }
 /* #divider {

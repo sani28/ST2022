@@ -263,9 +263,9 @@ p#title { border: none; font-size: 1.6em; padding: 0%; margin-top: -2%;}
 
 .career-compass { grid-area: career-compass; background-image: url("./pbp/career-compass-icons.png"); background-size: contain; background-repeat: no-repeat;}
 
-#career-compass-text { font-size: 0.6em; line-height: 15px; width: 550px; padding-left: 15%;}
+#career-compass-text { font-size: 0.6em; line-height: 15px; width: 550px; padding-left: 15%; padding-right: 10%;}
 
-.grid-container-5 { height: 100vh; margin: 0; margin-top: -15%; padding-left: 10%;}
+.grid-container-5 { height: 100vh; margin: 0; margin-top: -15%; padding-left: 10%; padding-right: 10%;}
 
 .grid-container-5 * {
  position: relative;
