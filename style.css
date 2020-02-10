@@ -33,6 +33,7 @@ html {
   max-height: 100vh;
   overflow-x: hidden;
   cursor: crosshair;
+  font-family: gangsterGrotesk, helveticaNeue, arial;
 }
 
 a {
@@ -435,7 +436,10 @@ h2 {
   border-bottom: 1px solid black;
   font-family: CosiTimes;
 }
-
+button {
+   text-decoration: none;
+   color: #ffffff;
+}
 /* -----------------------  FOOTER  ---------------------*/
 
 #footer {
