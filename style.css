@@ -273,6 +273,10 @@ h2:hover {
       font-size: 0.5em;
    }
 
+    #tag-word {
+     font-size: 1.2em;
+   }
+
    #breaker {
      width:90vw;
    }
