@@ -68,15 +68,21 @@ $( function() {
 
   /* IFRAME - Ref: http://jsfiddle.net/8wLm42ns/2/ */
 
-  $('.loadiframe').on('click', function(){
-      var src = $(this).data('src'),
-          width = $(this).data('width'),
-          height = $(this).data('height');
-      $('#frame').css({
-          width: width,
-          height: height
-      }).attr('src', src);
+
+  // A $( document ).ready() block.
+  $( document ).ready(function() {
+    $('.loadiframe').on('click', function(){
+        var src = $(this).data('src'),
+            width = $(this).data('width'),
+            height = $(this).data('height');
+        $('#frame').css({
+            width: width,
+            height: height
+        }).attr('src', src);
+    });
   });
+
+
 
 
 /* ------------------- SLIDESHOW --------------------*/
