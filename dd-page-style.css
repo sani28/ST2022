@@ -110,7 +110,7 @@ html, body, .grid-container { background-color: white; max-width: 100%; font-fam
 
   .bio { grid-area: bio; border: none;}
 
-  p#title { border: none; font-size: 1.5em; padding: 0%; line-height: 15px;}
+  p#title { border: none; font-size: 1.5em; padding: 0%; line-height: 17px;}
 
   p#valentin-title { font-size: 1.1em;}
 
@@ -167,7 +167,7 @@ html, body, .grid-container { background-color: white; max-width: 100%; font-fam
 
 .b-roll-3 { grid-area: b-roll-3; background-image: url("./dd/b-roll-4.gif"); background-size: contain; background-repeat: no-repeat;}
 
-.b-roll-text { grid-area: b-roll-text; font-size: 0.65em; line-height: 12px;padding: 10%;}
+.b-roll-text { grid-area: b-roll-text; font-size: 0.65em; line-height: 14px;padding: 10%;}
 
 
 .grid-container-3 { height: 100%; margin: 0; }
@@ -191,15 +191,15 @@ html, body, .grid-container { background-color: white; max-width: 100%; font-fam
 
 .ix-1 { grid-area: ix-1; background-image: url("./dd/hover-interaction.gif"); background-size: cover; background-repeat: no-repeat;}
 
-.ix-blurb { grid-area: ix-blurb; padding: 8%; font-size: 0.65em; line-height: 12px; }
+.ix-blurb { grid-area: ix-blurb; padding: 8%; font-size: 0.65em; line-height: 14px; }
 
 .ix-2 { grid-area: ix-2; background-image: url("./dd/team-hover.gif"); background-size: cover; background-repeat: no-repeat; }
 
-.ix-2-blurb { grid-area: ix-2-blurb; padding: 8%; font-size: 0.65em; line-height: 12px; }
+.ix-2-blurb { grid-area: ix-2-blurb; padding: 8%; font-size: 0.65em; line-height: 14px; }
 
 .ix-3 { grid-area: ix-3; background-image: url("./dd/legacy.gif"); background-size: contain; background-repeat: no-repeat;}
 
-.ix-blurb-3 { grid-area: ix-blurb-3; padding: 8%; font-size: 0.65em; line-height: 12px; margin-top: -5%;}
+.ix-blurb-3 { grid-area: ix-blurb-3; padding: 8%; font-size: 0.65em; line-height: 14px; margin-top: -5%;}
 
 
 /* .grid-container-2 { height:100%; margin: 0; }
@@ -244,7 +244,7 @@ html, body, .grid-container { background-color: white; max-width: 100%; font-fam
 
 .grid-container-4 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1.4fr 0.6fr 1fr;
   grid-template-areas: "valentin valentin valentin valentin" ". . . ." ". . . .";
 }
@@ -257,7 +257,7 @@ html, body, .grid-container { background-color: white; max-width: 100%; font-fam
   grid-area: valentin;
 }
 
-.title-2 { grid-area: title-2; width: 450px;font-size: 1em; color: black; padding: 5%; margin:0; }
+.title-2 { grid-area: title-2; width: 600px;font-size: 1em; color: black; padding: 1%; margin:0; }
 
 .vimeo {
   display: grid;

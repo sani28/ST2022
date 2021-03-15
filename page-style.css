@@ -64,15 +64,18 @@ html, body, .grid-container { background-color: white;max-width: 100%; max-heigh
  .title {
    width: 100%;
    font-family: helveticaNeue;
-   padding: 5%;
-   font-size: 1.5em;
+   padding-top: 7%;
+   font-size: 1em;
+   padding-bottom: 2%;
  }
 
   .time, .time-2, .bio, .members {
     font-size: 0.65em;
     line-height: 14px;
     font-family: helveticaNeue;
-    padding: 10%;
+    margin-bottom: 10%;
+    padding: 2%;
+    width: 80%;
   }
 
   .time p{
@@ -142,9 +145,10 @@ html, body, .grid-container { background-color: white;max-width: 100%; max-heigh
   padding: 10%;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 90%;
 }
 
-.project-desc { grid-area: project-desc; height: 400px; background-image: url("./pbp/pbp-preview.gif"); background-size: cover; background-repeat: no-repeat;}
+.project-desc { grid-area: project-desc; width: 90%;height: 400px; background-image: url("./pbp/pbp-preview.gif"); background-size: cover; background-repeat: no-repeat;}
 
 
 /* -------------- GRID CONTAINER - 2 -------------------------------------------- */
@@ -206,9 +210,9 @@ p#title { border: none; font-size: 1.6em; padding: 0%; margin-top: -2%;}
   width: 100vw;
 }
 
-.gif-1 { grid-area: gif-1; background-image: url("./pbp/30-mill.gif"); background-size: contain; background-repeat: no-repeat;}
+.gif-1 { grid-area: gif-1; background-image: url("./pbp/30-mill.gif"); background-size: contain; background-repeat: no-repeat; width: 90%;}
 
-.gif-2 { grid-area: gif-2;background-image: url("./pbp/how-to-park.gif"); background-size: contain; background-repeat: no-repeat;}
+.gif-2 { grid-area: gif-2;background-image: url("./pbp/how-to-park.gif"); background-size: contain; background-repeat: no-repeat; width: 90%;}
 
 /* -----------------    GRID CONTAINER 3      ----------------------------------- */
 
@@ -263,9 +267,9 @@ p#title { border: none; font-size: 1.6em; padding: 0%; margin-top: -2%;}
 
 .career-compass { grid-area: career-compass; background-image: url("./pbp/career-compass-icons.png"); background-size: contain; background-repeat: no-repeat;}
 
-#career-compass-text { font-size: 0.6em; line-height: 15px; width: 550px; padding-left: 15%; padding-right: 10%;}
+#career-compass-text { font-size: 0.6em; line-height: 15px; width: 550px; padding-left: 18%; padding-right: 10%;}
 
-.grid-container-5 { height: 100vh; margin: 0; margin-top: -15%; padding-left: 10%; padding-right: 10%;}
+.grid-container-5 { height: 100vh; margin: 0; margin-top: -15%; padding-left: 14%; padding-right: 10%; margin-bottom: 10%;}
 
 .grid-container-5 * {
  position: relative;
@@ -285,6 +289,19 @@ p#title { border: none; font-size: 1.6em; padding: 0%; margin-top: -2%;}
 }
 
 .career-page-mockup { grid-area: career-page-mockup; background-image: url("./pbp/careers-page-2.png"); background-size: contain; background-repeat: no-repeat; width: 600px; height: 100%;}
+
+.internal-values {
+  background-image: url("./pbp/internal-values.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 2%;
+}
+
+.internal-value-text {
+  font-size: 0.65em; line-height: 15px; width: 550px; padding-left: 0%; padding-bottom: 2%;
+}
 
 /* -------------------- DESKTOP QUERY (if > 650px)  ----------------------- */
 @media screen and (min-width: 650px)  {

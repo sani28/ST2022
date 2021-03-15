@@ -1,8 +1,40 @@
+/* -------------- FONTS  ------------------------------- */
+@font-face {
+  font-family: gangsterGrotesk;
+  src: url(./fonts/GangsterGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: helveticaNeue;
+  src: url(./fonts/Helvetica-Neue-LT-Std-53-Extended.ttf);
+}
+
+@font-face {
+  font-family: universExtended;
+  src: url(./fonts/Univers-93-Extra-Black-Extended.ttf);
+}
+
+@font-face {
+  font-family: CosiTimes;
+  src: url(./fonts/CosiTimes-Roman.otf);
+}
+
+@font-face {
+  font-family: spaceMono;
+  src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+
 /* General ----------- */
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: gangsterGrotesk;
+	font-size: 0.8em;
 }
 
 .film-title {
