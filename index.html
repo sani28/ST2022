@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://openprocessing.org/openprocessing_sketch.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.vticker-min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#news-container').vTicker({ 
+        speed: 1000,
+        pause: 3000,
+        animation: 'fade',
+        mousePause: true,
+        showItems: 2
+      });
+    });
+    </script>
+</head>
+
+<body>
+
+  <div id="border-info">
+    <span> © 2022 | SANI </span> 
+  </div>
+<!-- 
+  <div id="multivide">
+    <img src="imgs/logo-multivide.png" id="multivide-logo">
+  </div> -->
+  <!-- Display the countdown timer in an element -->
+  <!-- <p id="countdown"></p> -->
+  <div id="bg">
+  </div>
+  <div class="wrapper">
+    
+    <div id="memo">
+
+      <b> ON HIATUS <br>
+
+      
+<!--Thriving on chaos and coffee <a><u>@multividelab</u></a> -->
+    <!-- <p id="small" style="font-size:15px;letter-spacing: 0;"> <br><br><a href="">'21 ending credits</a></p>  -->
+    </b>
+</div>
+    
+    <div class="main">
+
+      <hr>
+
+      <p>Youth is not a time of life; it is a state of mind; it is not a matter of rosy cheeks, red lips and supple
+        knees; it is a matter of the will, a quality of the imagination, a vigor of the emotions; it is the freshness of
+        the deep springs of life.<br><br>
+
+        Youth means a temperamental predominance of courage over timidity of the appetite, for adventure over the love
+        of ease. This often exists in a man of sixty more than a body of twenty. Nobody grows old merely by a number of
+        years. We grow old by deserting our ideals.<br><br>
+
+        Years may wrinkle the skin, but to give up enthusiasm wrinkles the soul. Worry, fear, self-distrust bows the
+        heart and turns the spirit back to dust.<br><br>
+
+        Whether sixty or sixteen, there is in every human being's heart the lure of wonder, the unfailing child-like
+        appetite of what's next, and the joy of the game of living. In the center of your heart and my heart there is a
+        wireless station; so long as it receives messages of beauty, hope, cheer, courage and power from men and from
+        the Infinite, so long are you young.<br><br>
+
+        When the aerials are down, and your spirit is covered with snows of cynicism and the ice of pessimism, then you
+        are grown old, even at twenty, but as long as your aerials are up, to catch the waves of optimism, there is hope
+        you may die young at eighty.<br><br>
+
+        <i>- Samuel Ullman</i>
+      </p>
+    </div> 
+
+    </div>
+    
+<div class="bottom">
+<hr>
+<span style="font-size:10px;">Coming Soon:  <b><u><span style="font-family: apoloBoldItalic;">@MULTIVIDELAB</span></u></b> <br><br></span>
+
+<div id="news-container">
+	<ul>
+		<li>
+			<div>
+				<!-- Coming Soon:  <b><u><span style="font-family: apoloBoldItalic;">@MULTIVIDELAB</span></u></b> <br><br> -->
+			</div>
+		</li> 
+		<li>
+
+			<div>
+
+      <!-- <span style="font-family: apoloBoldItalic;"><a href="">'21 ending credits</a><br><br> -->
+			</div>
+		</li> 
+		<li>
+			<div>
+        <!-- <b><u><span style="font-family: apoloBoldItalic;">2021 Ending Credits</span></u></b><br><br> -->
+			</div>
+		</li>   
+		<li>
+
+			<div>
+				<!-- 4 jugbit.com jquery vticker more info more info more info more info more info<br><br> -->
+			</div>
+		</li>
+	</ul>
+</div> 
+</div>
+</body>
+
+  
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("countdown").innerHTML = " ― " + days + " D " + hours + " H  "
+    + minutes + "  " + seconds + " S ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+</html>

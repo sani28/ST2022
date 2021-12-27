@@ -1,0 +1,219 @@
+@font-face {
+    font-family: apoloHairline;
+    src: url(./fonts/ApocLCTrial-Hairline.ttf);
+  }
+  @font-face {
+    font-family: apoloHairlineItalic;
+    src: url(./fonts/ApocLCTrial-HairlineItalic.ttf);
+  }
+
+  @font-face {
+    font-family: apoloDark;
+    src: url(./fonts/ApocLCTrial-Dark.otf);
+  }
+
+
+  @font-face {
+    font-family: apoloRegular;
+    src: url(././fonts/ApocLCTrial-Regular.otf);
+  }
+
+  @font-face {
+    font-family: apoloBoldItalic;
+    src: url(./fonts/ApocLCTrial-UltraBoldItalic.otf);
+  }
+
+  a {
+    text-decoration: none;
+    color:black;
+    text-decoration: underline;
+  }
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    font-family: apoloRegular;
+}
+
+#bg {
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapper {
+    margin:2.5em;
+    display: flex;
+    justify-self: center;
+    z-index: 1;
+    min-height:50vh;
+}
+
+.main {
+    z-index:2;
+    width:80vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    height:100vh;
+    font-size: 9px;
+    margin-left:5%;
+    font-family: apoloHairline;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:black;
+    font-kerning:normal;
+    height:max-content;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#000000;
+    height: 1px;
+    
+  }
+
+  #border-info {
+      bottom:2.5em;
+      right:2em;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      position: absolute;
+  }
+
+  #countdown {
+      font-size:20px;
+      color:none;
+      bottom:0.5em;
+      left:2em;
+      font-style: italic;
+      display: block;
+      position: absolute;
+      height:max-content;
+  }
+
+  .friend-checker-wrapper {
+    display:flex;
+    position: fixed;
+    width:99vw;
+    height:max-content;
+    justify-content: center;
+    top:55vh;
+  }
+  .friend-checker {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f1 f2 f3 f4"
+      "f5 f6 f7 f8"
+      "f9 f10 f11 f12";
+  }
+
+  .gift {
+      width:50px;
+      height:50px;
+  }
+
+  .friend-checker img {
+      width:60px;
+      padding:5px;
+  }
+
+  .gift:hover {
+    background-color:darkgray;
+  }
+  
+  .f1 { grid-area: f1; }
+  
+  .f2 { grid-area: f2; }
+  
+  .f3 { grid-area: f3; }
+  
+  .f4 { grid-area: f4; }
+  
+  .f5 { grid-area: f5; }
+  
+  .f6 { grid-area: f6; }
+  
+  .f7 { grid-area: f7; }
+  
+  .f8 { grid-area: f8; }
+  
+  .f9 { grid-area: f9; }
+  
+  .f10 { grid-area: f10; }
+  
+  .f11 { grid-area: f11; }
+  
+  .f12 { grid-area: f12; }
+  
+
+.friend-checker * {
+    position: relative;
+  }
+  
+  .friend-checker *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #news-container
+  {
+      font-family: apoloHairlineItalic;
+      text-transform: uppercase;
+      text-align: justify;
+      font-kerning:normal;
+      letter-spacing:0.02em;
+      font-size:14px;
+      margin: auto;
+  }
+  
+  #news-container ul li div {
+
+  }
+
+  .bottom {
+      padding:2em;
+  }
+
+  #memo {
+      max-width:360;
+      font-size:2.5em;
+      letter-spacing: 0.10em;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      align-self:center;
+      font-family: apoloBoldItalic;;
+      text-transform: uppercase;
+  }
+
+  #multivide {
+      bottom:40px;
+      right:30px;
+      position: absolute;
+  }
+
+  #multivide-logo {
+    margin-bottom:-10px;
+    width:20px;
+  }
