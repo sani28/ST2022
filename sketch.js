@@ -15,8 +15,8 @@ preload=_=>{
 class PROPERTY{
 	constructor(){
 		this.noiseDetail=350
-		this.particleSize=1,3
-		this.randomness=.06		
+		this.particleSize=1.5
+		this.randomness=.06
 		this.noiseTorque=29
 		this.speed=19.9
 	}
@@ -29,7 +29,7 @@ function windowResized() {
 setup=()=> {
     var p5Canvas = createCanvas(windowWidth,windowHeight)
     p5Canvas.parent("bg");
-    
+
   for(i=3e3;i--;){
     particles.push({
       x:random(width),
@@ -41,22 +41,22 @@ setup=()=> {
 
 
 draw=()=> {
-    
-    
+
+
   timer+=.003
   background('#F4F4F4')
   fill('black')
   noStroke()
-  
+
   for(_ of particles)with(_){
     new_θ=noise(x/p.noiseDetail,y/p.noiseDetail,timer)*p.noiseTorque
-// get average of θ and new_θ 
+// get average of θ and new_θ
 		X=cos(θ)+cos(new_θ)
     Y=sin(θ)+sin(new_θ)
     θ=atan2(Y,X)
 
     θ+=random(-1,1)*p.randomness
-  
+
     x+=cos(θ)*p.speed
     y+=sin(θ)*p.speed
     x=(x+width)%width
@@ -66,4 +66,3 @@ draw=()=> {
 
 
 }
-
