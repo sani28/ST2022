@@ -1,0 +1,107 @@
+/* -------------- FONTS  ------------------------------- */
+@font-face {
+  font-family: gangsterGrotesk;
+  src: url(./fonts/GangsterGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: helveticaNeue;
+  src: url(./fonts/Helvetica-Neue-LT-Std-53-Extended.ttf);
+}
+
+@font-face {
+  font-family: universExtended;
+  src: url(./fonts/Univers-93-Extra-Black-Extended.ttf);
+}
+
+@font-face {
+  font-family: CosiTimes;
+  src: url(./fonts/CosiTimes-Roman.otf);
+}
+
+@font-face {
+  font-family: spaceMono;
+  src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+
+/* General ----------- */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: gangsterGrotesk;
+	font-size: 0.8em;
+}
+
+.film-title {
+	font-size: 0.8em;
+	font-family: helveticaNeue;
+}
+
+a:hover {
+		transform: scale(2);
+}
+
+.img {
+  width: 80%;
+}
+
+.portrait {
+    width: 100%;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+}
+/* Content ----------- */
+.content {
+	padding: 2em 0;
+}
+.gallery-wrap {
+	margin: 0 -1em -1em 0;
+}
+.gallery-item-wrap {
+	float: left;
+	padding: 0 1em 1em 0;
+}
+.gallery-item {
+	min-height: 300px;
+	/* background: rgba(0,0,0,.2); */
+}
+/* Smartphone Portrait ----------- */
+@media only screen and (min-width:20em) {
+	.wrapper {
+		width: 95%;
+	}
+	img {
+		max-width: 100%;
+	}
+	.gallery-item-wrap {
+		width: 100%;
+	}
+}
+/* Smartphone Landscape ----------- */
+@media only screen and (min-width: 25em) {
+	.gallery-item-wrap {
+		width: 50%;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 62em) {
+	.wrapper {
+		width: 60em;
+	}
+	.gallery-item-wrap {
+		width: 25%;
+	}
+}
