@@ -309,9 +309,18 @@ backdrop-filter: blur(2px);
       width:90vw;
     }
 
+    #lineDesktopDrawing {
+      width:150px!important;
+    }
+
     .topbar {
       height:90px!important;
-      padding:50px;
+      padding:10px;
+      background-image: none;
+    }
+
+    #inline-container {
+      width:100px!important;
     }
 
     #digitaldesign {
@@ -331,13 +340,25 @@ backdrop-filter: blur(2px);
     .links {
       font-size: 16px!important;
     }
+    img {
+      display: inline;
+    }
+
+    #link-out-icon {
+      width:15px!important;
+    }
   
     .link-container {
       max-width:40vw!important;
       font-size: 14px!important;
     }
     .intro-block-style {
-      font-size:12px;
+      font-size:10px!important;
+    }
+
+    #portfolio {
+      font-size: 10px!important;
+      min-width:max-content;
     }
     
   }
