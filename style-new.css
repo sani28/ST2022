@@ -316,7 +316,7 @@ backdrop-filter: blur(2px);
 
     .topbar {
       height:90px!important;
-      padding:10px;
+      padding:20px;
       background-image: none;
     }
 
@@ -347,6 +347,9 @@ backdrop-filter: blur(2px);
 
     #subtitle {
       display: none
+    }
+    #caption {
+      font-size:8px!important;
     }
 
     #link-out-icon {
